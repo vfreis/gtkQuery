@@ -7,7 +7,7 @@ typedef struct _gtkQueryEntry {
 }gtkQueryEntry;
 
 gtkQueryEntry entry(char*);
-const char *get (void);
-double getAsDouble (void);	
+const char *getEntry ();
+double getEntryAsDouble ();	
  	
 

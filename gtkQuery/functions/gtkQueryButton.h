@@ -1,4 +1,4 @@
-#define BUTTON_STD() {send}
+#define BUTTON_STD() {onClick}
 
 gtkQueryButton button (char *button_name) {
 
@@ -9,9 +9,9 @@ gtkQueryButton button (char *button_name) {
 	 return button;
 }
 
-void send () {
+void onClick (gtkQueryFunction function) {
 
 	g_signal_connect(gtk.button, "clicked",
-			G_CALLBACK(onClick), NULL);
+			G_CALLBACK(function), NULL);
 }
 
