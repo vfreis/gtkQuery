@@ -9,9 +9,9 @@ gtkQueryButton button (char *button_name) {
 	 return button;
 }
 
-void send (gtkQuery gtk) {
+void send () {
 
 	g_signal_connect(gtk.button, "clicked",
-			G_CALLBACK(gtk.function), NULL);
+			G_CALLBACK(onClick), NULL);
 }
 

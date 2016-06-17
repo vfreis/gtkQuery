@@ -1,4 +1,8 @@
 #include <gtk/gtk.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
 
 //gtkQueryObj is used to make an easier access to gtk objects needed troughout the program;
 typedef struct _gtkQuery {
@@ -16,7 +20,7 @@ typedef struct _gtkQuery {
 }gtkQuery;
 
 
-gtkQueryObj gtk;
+gtkQuery gtk;
 
 void gtkQueryStart(int argc, char *argv[], char* widget_name) {
 
