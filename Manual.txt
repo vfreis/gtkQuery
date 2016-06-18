@@ -1,5 +1,23 @@
 /////////////////////////
 	
+	STANDARD MAIN CODE ***
+	
+		Sempre siga esse exemplo para o seu main;
+		
+		int main (int argv, char *argc[]) {
+		
+			gtkQuery(argv, argc, "seuArquivo.xml");
+			
+			//Seu código aqui .....
+		
+		
+			//Na última linha ...
+			gtk_main();
+		}
+
+
+/////////////////////////
+	
 	Window
 			
 	-----void window("nomeDaJanela").show();
