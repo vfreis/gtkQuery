@@ -1,6 +1,6 @@
-#define WINDOW_STD() {show}
+#define WINDOW_STD() {show, hide}
 
-gtkQueryWindow window(char* window_name) {
+gtkQueryWindow window(char *window_name) {
 
 	gtkQueryWindow window = WINDOW_STD();
 	
@@ -12,5 +12,10 @@ gtkQueryWindow window(char* window_name) {
 void show () {
 
 	gtk_widget_show((GtkWidget*)gtk.window);
+}
+
+void hide () {
+
+	gtk_widget_hide((GtkWidget*)gtk.window);
 }
 
