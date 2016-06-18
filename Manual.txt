@@ -4,7 +4,7 @@
 	
 		Sempre siga esse exemplo para o seu main;
 		
-		int main (int argv, char *argc[]) {
+		int main (int argc, char *argv[]) {
 		
 			gtkQuery(argv, argc, "seuArquivo.xml");
 			
