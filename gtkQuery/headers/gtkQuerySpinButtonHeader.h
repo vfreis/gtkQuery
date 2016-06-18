@@ -1,7 +1,7 @@
 typedef struct _gtkQuerySpinButton{
 
-	double (*get) (void);
-	void (*adjust) (double, double, double, double, double, double);
+	double (*getSpin) (void);
+	void (*adjustSpin) (double, double, double, double, double, double);
 	
 }gtkQuerySpinButton;
 

@@ -1,7 +1,7 @@
 typedef struct _gtkQueryEntry {
 
-	const char* (*get) ();
- 	double (*getAsDouble) ();	
+	const char* (*getEntry) ();
+ 	double (*getEntryAsDouble) ();	
  	
 
 }gtkQueryEntry;

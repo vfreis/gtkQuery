@@ -9,9 +9,7 @@ typedef void (*gtkQueryFunction) (void);
 
 //gtkQueryObj is used to make an easier access to gtk objects needed troughout the program;
 typedef struct _gtkQuery {
-	
-	void (*function) (void);
-	
+		
 	GtkBuilder *builder;
 	GtkWindow *window;
 	GtkButton *button;
@@ -21,7 +19,6 @@ typedef struct _gtkQuery {
 	GtkAdjustment *adjust;
 
 }gtkQuery;
-
 
 gtkQuery gtk;
 

@@ -8,3 +8,7 @@ typedef struct _gtkQueryLabel{
 gtkQueryLabel label(char*);
 void write(char*);
 void writeDouble(double);
+
+
+
+

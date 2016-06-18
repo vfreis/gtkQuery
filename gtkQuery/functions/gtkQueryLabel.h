@@ -1,4 +1,3 @@
-
 #define TXT_STD_SIZE 30
 #define LABEL_STD() {write, writeDouble}
 
@@ -24,3 +23,4 @@ void writeDouble (double number) {
 
 	gtk_label_set_text(gtk.label, text);
 }
+

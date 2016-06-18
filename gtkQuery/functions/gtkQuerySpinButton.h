@@ -1,7 +1,5 @@
 #define SPIN_STD() {getSpin, adjustSpin}
 
-#define STD_DIGITS 3
-
 gtkQuerySpinButton spin(char* spin_name) {
 
 	gtk.spin = (GtkSpinButton*)gtk_builder_get_object(gtk.builder, spin_name);
