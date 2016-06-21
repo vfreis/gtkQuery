@@ -23,6 +23,9 @@
 	-----void window("nomeDaJanela").show();
 			Sobe a sua janela criada no glade
 
+	-----void window("nomeDaJanela").move(posiçãoX, posiçãoY);
+			Posiciona a janela nas coordenadas X,Y na tela		
+
 /////////////////////////
 	
 	Button

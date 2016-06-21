@@ -1,4 +1,4 @@
-#define WINDOW_STD() {show, hide}
+#define WINDOW_STD() {show, hide, move}
 
 gtkQueryWindow window(char *window_name) {
 
@@ -17,5 +17,10 @@ void show () {
 void hide () {
 
 	gtk_widget_hide((GtkWidget*)gtk.window);
+}
+
+void move (int posx, int posy){
+
+	gtk_window_move(gtk.window,	posx, posy);
 }
 
