@@ -1,6 +1,6 @@
 #include "gtkQuery/gtkQuery.h"
 
-void onClick() {
+void imprime() {
 
 	label("label").write("Hello gtkQuery !!");
 }	
@@ -11,8 +11,8 @@ int main (int argc, char *argv[]) {
 	
 	window("window").show();
 
-	button("button").send();
-	
+	button("button").onClick(imprime);
+
 	gtk_main();
 }
 

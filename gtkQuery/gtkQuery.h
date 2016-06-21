@@ -25,6 +25,7 @@ typedef struct _gtkQuery {
 
 gtkQuery gtk;
 
+
 void gtkQueryStart(int argc, char *argv[], char* widget_name) {
 
 	gtk_init(&argc, &argv);

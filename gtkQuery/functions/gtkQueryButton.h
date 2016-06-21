@@ -9,14 +9,12 @@ gtkQueryButton button (char *button_name) {
 	 return button;
 }
 
-void onClick (void *function, void *param) {
+void onClick (void *function) {
 	
 	//void *param is not working yet ....
 
-	printf("%s\n", (char*)param);
-
 	g_signal_connect((gpointer)gtk.button, "clicked",
-			function, param);
+			function, NULL);
 }
 
 void setButtonLabel (char* button_label) {
