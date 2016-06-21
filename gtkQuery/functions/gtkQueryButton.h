@@ -1,4 +1,4 @@
-#define BUTTON_STD() {onClick}
+#define BUTTON_STD() {onClick, setButtonLabel}
 
 gtkQueryButton button (char *button_name) {
 
@@ -9,9 +9,20 @@ gtkQueryButton button (char *button_name) {
 	 return button;
 }
 
-void onClick (gtkQueryFunction function) {
+void onClick (void *function, void *param) {
+	
+	//void *param is not working yet ....
 
-	g_signal_connect(gtk.button, "clicked",
-			G_CALLBACK(function), NULL);
+	printf("%s\n", (char*)param);
+
+	g_signal_connect((gpointer)gtk.button, "clicked",
+			function, param);
+}
+
+void setButtonLabel (char* button_label) {
+
+	const char *_button_label = button_label;
+
+	gtk_button_set_label(gtk.button, _button_label);
 }
 

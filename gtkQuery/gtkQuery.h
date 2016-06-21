@@ -1,11 +1,14 @@
-#include <gtk/gtk.h>
-#include <stdio.h>
+#ifndef __GTK_H__
+	#include <gtk/gtk.h>
+#endif /* __GTK_H__ */
+
 #include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 #include <string.h>
 
 //gtkQuery prototype function
-typedef void (*gtkQueryFunction) (void);
+typedef void (*gtkQueryFunction) (void*);
 
 //gtkQueryObj is used to make an easier access to gtk objects needed troughout the program;
 typedef struct _gtkQuery {
@@ -35,6 +38,7 @@ void gtkQueryStart(int argc, char *argv[], char* widget_name) {
 
 #include "headers/gtkQueryHeader.h"
 #include "functions/gtkQueryFunction.h"
+
 
 
 

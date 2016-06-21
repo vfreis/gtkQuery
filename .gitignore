@@ -1,3 +1,7 @@
+# Test files
+
+teste.c
+
 # Object files
 *.o
 *.ko

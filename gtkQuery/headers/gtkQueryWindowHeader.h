@@ -9,4 +9,5 @@ typedef struct _gtkQueryWindow{
 gtkQueryWindow window(char*);
 void show();
 void hide();
-void move(int,int);
+void move(int, int);
+ 
